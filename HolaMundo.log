@@ -1,0 +1,288 @@
+2025-10-30T21:42:44.799-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : Starting Java0078M6BibliotecaApplication using Java 21.0.7 with PID 11716 (D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca\target\classes started by Laura in D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca)
+2025-10-30T21:42:44.804-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T21:42:45.846-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T21:42:45.884-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2025-10-30T21:42:46.608-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T21:42:46.640-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T21:42:46.640-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-10-30T21:42:46.709-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T21:42:46.709-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1835 ms
+2025-10-30T21:42:46.921-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T21:42:46.992-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-10-30T21:42:47.033-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T21:42:47.399-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T21:42:47.437-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T21:42:47.799-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60fc7f43
+2025-10-30T21:42:47.802-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T21:42:47.899-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T21:42:49.061-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T21:42:49.178-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:42:49.194-03:00  WARN 11716 --- [JAVA0078_M6_Biblioteca] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'libroRestController': Unsatisfied dependency expressed through field 'libroService': Error creating bean with name 'libroServiceJdbc': Unsatisfied dependency expressed through field 'libroDao': No qualifying bean of type 'cl.web.jdbc.dao.LibroDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-10-30T21:42:49.195-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:42:49.198-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T21:42:49.208-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T21:42:49.214-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-30T21:42:49.231-03:00  INFO 11716 --- [JAVA0078_M6_Biblioteca] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-30T21:42:49.259-03:00 ERROR 11716 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field libroDao in cl.web.jdbc.services.LibroServiceJdbc required a bean of type 'cl.web.jdbc.dao.LibroDAO' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cl.web.jdbc.dao.LibroDAO' in your configuration.
+
+2025-10-30T21:44:26.783-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : Starting Java0078M6BibliotecaApplication using Java 21.0.7 with PID 19352 (D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca\target\classes started by Laura in D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca)
+2025-10-30T21:44:26.785-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T21:44:27.497-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T21:44:27.527-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2025-10-30T21:44:27.970-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T21:44:27.987-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T21:44:27.988-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-10-30T21:44:28.052-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T21:44:28.053-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1208 ms
+2025-10-30T21:44:28.234-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T21:44:28.290-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-10-30T21:44:28.330-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T21:44:28.624-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T21:44:28.661-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T21:44:28.966-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@acb5508
+2025-10-30T21:44:28.968-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T21:44:29.043-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T21:44:30.034-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T21:44:30.131-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:44:30.270-03:00  WARN 19352 --- [JAVA0078_M6_Biblioteca] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T21:44:30.380-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-10-30T21:44:30.469-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-30T21:44:30.498-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-30T21:44:30.547-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-30T21:44:30.720-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T21:44:30.731-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : Started Java0078M6BibliotecaApplication in 4.406 seconds (process running for 5.164)
+2025-10-30T21:45:28.878-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T21:45:28.880-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T21:45:28.881-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-30T21:45:28.882-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-30T21:45:28.882-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-30T21:45:28.884-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79ae3fb1
+2025-10-30T21:45:28.885-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3fc051ce
+2025-10-30T21:45:28.886-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-30T21:45:28.887-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-10-30T21:45:28.900-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros", parameters={}
+2025-10-30T21:45:28.918-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#listarLibros()
+2025-10-30T21:45:29.030-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:45:29.033-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[cl.web.jdbc.model.Libro@2c33c98c, cl.web.jdbc.model.Libro@5573597d, cl.web.jdbc.model.Libro@49943c7 (truncated)...]
+2025-10-30T21:45:29.103-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:46:35.345-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/jdbc/libros", parameters={}
+2025-10-30T21:46:35.345-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#crearLibro(Libro)
+2025-10-30T21:46:35.411-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [cl.web.jdbc.model.Libro@445c584a]
+2025-10-30T21:46:35.429-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-10-30T21:46:35.429-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Libro agregado correctamente"]
+2025-10-30T21:46:35.432-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:46:44.224-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros", parameters={}
+2025-10-30T21:46:44.225-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#listarLibros()
+2025-10-30T21:46:44.227-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:46:44.228-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[cl.web.jdbc.model.Libro@271616d6, cl.web.jdbc.model.Libro@29d1fc44, cl.web.jdbc.model.Libro@2dee7da (truncated)...]
+2025-10-30T21:46:44.229-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:48:04.320-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/api/jdbc/libros/4", parameters={}
+2025-10-30T21:48:04.322-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#actualizarLibro(long, Libro)
+2025-10-30T21:48:04.326-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [cl.web.jdbc.model.Libro@270af354]
+2025-10-30T21:48:04.365-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [UPDATE personas SET titulo = ?, anio_publicacion = ? WHERE id = ?]
+2025-10-30T21:48:04.366-03:00 ERROR 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [UPDATE personas SET titulo = ?, anio_publicacion = ? WHERE id = ?]] with root cause
+
+org.postgresql.util.PSQLException: ERROR: no existe la columna «titulo» en la relación «personas»
+  Position: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2736) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:525) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157) ~[postgresql-42.7.8.jar:42.7.8]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:977) ~[spring-jdbc-6.2.12.jar:6.2.12]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.2.12.jar:6.2.12]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:972) ~[spring-jdbc-6.2.12.jar:6.2.12]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1016) ~[spring-jdbc-6.2.12.jar:6.2.12]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1026) ~[spring-jdbc-6.2.12.jar:6.2.12]
+	at cl.web.jdbc.dao.LibroDAO.actualizar(LibroDAO.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.12.jar:6.2.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.12.jar:6.2.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.12.jar:6.2.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.12.jar:6.2.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.12.jar:6.2.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.12.jar:6.2.12]
+	at cl.web.jdbc.dao.LibroDAO$$SpringCGLIB$$0.actualizar(<generated>) ~[classes/:na]
+	at cl.web.jdbc.services.LibroServiceJdbc.actualizar(LibroServiceJdbc.java:29) ~[classes/:na]
+	at cl.web.jdbc.restControllers.LibroRestController.actualizarLibro(LibroRestController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-30T21:48:04.381-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2025-10-30T21:48:04.383-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-30T21:48:04.402-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:48:04.404-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Oct 30 21:48:04 CLST 2025, status=500, error=Internal Server Error, path=/api/jdbc/li (truncated)...]
+2025-10-30T21:48:04.424-03:00 DEBUG 19352 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-10-30T21:48:55.916-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-30T21:48:55.919-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T21:48:55.934-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T21:48:55.938-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:48:55.941-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T21:48:55.947-03:00  INFO 19352 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T21:48:58.162-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : Starting Java0078M6BibliotecaApplication using Java 21.0.7 with PID 10308 (D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca\target\classes started by Laura in D:\Curso Java TD\Proyectos\Modulo6\JAVA0078_M6_Biblioteca)
+2025-10-30T21:48:58.165-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T21:48:58.890-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T21:48:58.923-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2025-10-30T21:48:59.434-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T21:48:59.452-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T21:48:59.453-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-10-30T21:48:59.522-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T21:48:59.523-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1308 ms
+2025-10-30T21:48:59.731-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T21:48:59.792-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-10-30T21:48:59.861-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T21:49:00.189-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T21:49:00.228-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T21:49:00.437-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d290757
+2025-10-30T21:49:00.439-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T21:49:00.521-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T21:49:01.580-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T21:49:01.679-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:49:01.858-03:00  WARN 10308 --- [JAVA0078_M6_Biblioteca] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T21:49:01.975-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2025-10-30T21:49:02.075-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-30T21:49:02.113-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-30T21:49:02.166-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-30T21:49:02.353-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T21:49:02.364-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [main] cl.web.Java0078M6BibliotecaApplication   : Started Java0078M6BibliotecaApplication in 4.729 seconds (process running for 5.466)
+2025-10-30T21:49:07.108-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T21:49:07.109-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T21:49:07.109-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-10-30T21:49:07.110-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-10-30T21:49:07.110-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-10-30T21:49:07.112-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@25fcdcc6
+2025-10-30T21:49:07.112-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6d8096ee
+2025-10-30T21:49:07.114-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-30T21:49:07.114-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-10-30T21:49:07.127-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/api/jdbc/libros/4", parameters={}
+2025-10-30T21:49:07.147-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#actualizarLibro(long, Libro)
+2025-10-30T21:49:07.311-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [cl.web.jdbc.model.Libro@58be1dc7]
+2025-10-30T21:49:07.346-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-10-30T21:49:07.346-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Libro actualizado correctamente"]
+2025-10-30T21:49:07.354-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:49:13.260-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros", parameters={}
+2025-10-30T21:49:13.260-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#listarLibros()
+2025-10-30T21:49:13.270-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:49:13.270-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[cl.web.jdbc.model.Libro@77a81df2, cl.web.jdbc.model.Libro@7eff7a3, cl.web.jdbc.model.Libro@23a2ad98 (truncated)...]
+2025-10-30T21:49:13.293-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:49:33.459-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/api/jdbc/libros/4", parameters={}
+2025-10-30T21:49:33.460-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#eliminarLibro(long)
+2025-10-30T21:49:33.467-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-10-30T21:49:33.467-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Libro eliminado correctamente"]
+2025-10-30T21:49:33.469-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:51:49.215-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros/anio/2020", parameters={}
+2025-10-30T21:51:49.216-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#buscarPorAnio(int)
+2025-10-30T21:51:49.220-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:51:49.220-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2025-10-30T21:51:49.222-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:51:57.688-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros/anio/2024", parameters={}
+2025-10-30T21:51:57.688-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#buscarPorAnio(int)
+2025-10-30T21:51:57.690-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:51:57.690-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+2025-10-30T21:51:57.691-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:52:06.781-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros", parameters={}
+2025-10-30T21:52:06.783-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#listarLibros()
+2025-10-30T21:52:06.785-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:52:06.785-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[cl.web.jdbc.model.Libro@6bae43c9, cl.web.jdbc.model.Libro@6569b0cc, cl.web.jdbc.model.Libro@615628b (truncated)...]
+2025-10-30T21:52:06.787-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:52:18.272-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/jdbc/libros/anio/1949", parameters={}
+2025-10-30T21:52:18.274-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.web.jdbc.restControllers.LibroRestController#buscarPorAnio(int)
+2025-10-30T21:52:18.276-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-30T21:52:18.277-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[cl.web.jdbc.model.Libro@4248f1b3]]
+2025-10-30T21:52:18.278-03:00 DEBUG 10308 --- [JAVA0078_M6_Biblioteca] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-10-30T21:53:18.290-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-30T21:53:18.292-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T21:53:18.308-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T21:53:18.313-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T21:53:18.316-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T21:53:18.327-03:00  INFO 10308 --- [JAVA0078_M6_Biblioteca] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
