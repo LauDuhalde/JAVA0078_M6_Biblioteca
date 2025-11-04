@@ -3,6 +3,7 @@ package cl.web.jpa.model;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -17,6 +18,8 @@ public class Autor {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+	
+	@Column(nullable = false, unique = true)
     private String nombre;
 
     @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -68,4 +71,8 @@ public class Autor {
 		this.libros = libros;
 	}
     
+	public void agregarLibro(Libro libro) {
+        libros.add(libro);
+        libro.setAutor(this);
+    }
 }

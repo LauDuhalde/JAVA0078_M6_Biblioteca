@@ -1,0 +1,44 @@
+Registrar nuevo autor:
+http://localhost:8081/api/biblioteca/autores
+
+{
+  "nombre": "Gabriel García Márquez"
+}
+
+Actualizar autor:
+http://localhost:8081/api/biblioteca/autores
+
+{
+  "id": 3,
+  "nombre": "Gabriel García Márquez"
+}
+
+Listar libros:
+http://localhost:8081/api/biblioteca/libros
+
+Registrar nuevo libro:
+http://localhost:8081/api/biblioteca/libros
+
+{
+  "titulo": "El amor en los tiempos del cólera",
+  "anioPublicacion": 1985,
+  "autor": {
+    "id": 3,
+    "nombre": "Gabriel García Márquez"
+  }
+}
+
+Registrar libro con nuevo autor:
+http://localhost:8081/api/biblioteca/libros/nuevoAutor
+
+{
+    "titulo": "La casa de los espíritus",
+    "anioPublicacion": 1982,
+    "autor":{
+        "nombre":"Isabel Allende"
+    }
+}
+
+Eliminar un libro:
+http://localhost:8081/api/biblioteca/libros/3
+

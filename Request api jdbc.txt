@@ -1,0 +1,24 @@
+Listar libros:
+http://localhost:8081/api/jdbc/libros
+
+Registrar nuevo libro:
+http://localhost:8081/api/jdbc/libros
+
+{
+    "titulo":"El Quijote",
+    "anioPublicacion":1605
+}
+
+Actualizar libro:
+http://localhost:8081/api/jdbc/libros/4
+
+{
+    "titulo":"Nuevo título",
+    "anioPublicacion":2024
+}
+
+Eliminar libro:
+http://localhost:8081/api/jdbc/libros/4
+
+Buscar libros por año:
+http://localhost:8081/api/jdbc/libros/anio/1949
