@@ -1,7 +1,5 @@
 package cl.web.jdbc.model;
 
-import cl.web.jpa.model.Autor;
-
 public class Libro {
 	private Long id;
     private String titulo;
@@ -11,13 +9,13 @@ public class Libro {
 		super();
 	}
 
-	public Libro(String titulo, int anioPublicacion, Autor autor) {
+	public Libro(String titulo, int anioPublicacion) {
 		super();
 		this.titulo = titulo;
 		this.anioPublicacion = anioPublicacion;
 	}
 
-	public Libro(Long id, String titulo, int anioPublicacion, Autor autor) {
+	public Libro(Long id, String titulo, int anioPublicacion) {
 		super();
 		this.id = id;
 		this.titulo = titulo;

@@ -25,6 +25,11 @@ public class LibroServiceJpa {
         }
         return autorRepository.save(autor);
     }
+    
+    // Consultar todos los autores
+    public List<Autor> listarAutores() {
+        return autorRepository.findAll();
+    }
 
     // Guardar nuevo libro
     public Libro guardarLibro(Libro libro) {

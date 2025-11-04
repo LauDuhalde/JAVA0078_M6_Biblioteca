@@ -29,6 +29,12 @@ public class BibliotecaRestController {
     public Autor actualizarAutor(@RequestBody Autor autor) {
         return libroServiceJpa.actualizarAutor(autor);
     }
+    
+    //Listar autores
+    @GetMapping("/autores")
+    public List<Autor> listarAutores() {
+        return libroServiceJpa.listarAutores();
+    }
 
     // LIBROS
 
